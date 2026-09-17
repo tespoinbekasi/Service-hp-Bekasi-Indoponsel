@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Service HP Android & iPhone bergaransi di Bekasi. Perbaikan LCD, baterai, charging, software, dan kerusakan lainnya.">
+  <title>Indo Ponsel | Service HP Android & iPhone Bekasi</title>
+  <style>
+    :root{
+      --dark:#07111f; --blue:#0b63f6; --cyan:#14b8d4; --light:#f5f8fc;
+      --text:#142033; --muted:#64748b; --white:#fff; --green:#16a34a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{background:linear-gradient(135deg,#06101d,#0b2340);color:white;position:relative;overflow:hidden}
+    header:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:#0b63f633;right:-100px;top:-100px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;position:relative;z-index:2}
+    .logo{font-size:23px;font-weight:800}.logo span{color:#38bdf8}
+    .nav-btn{background:white;color:#0b2340;padding:10px 16px;border-radius:999px;font-weight:700;font-size:14px}
+    .hero{padding:68px 0 82px;display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center;position:relative;z-index:1}
+    .badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff2d;padding:8px 13px;border-radius:999px;font-size:13px;margin-bottom:18px}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.03;margin-bottom:20px}
+    h1 span{color:#38bdf8}
+    .hero p{font-size:18px;color:#d8e4f2;max-width:620px;margin-bottom:28px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:14px 20px;border-radius:12px;font-weight:800;display:inline-block}
+    .btn-primary{background:#0b63f6;color:white}.btn-secondary{background:#ffffff12;border:1px solid #ffffff38;color:white}
+    .phone-card{background:#ffffff10;border:1px solid #ffffff25;border-radius:26px;padding:28px;backdrop-filter:blur(10px)}
+    .phone{font-size:88px;text-align:center;margin-bottom:10px}
+    .phone-card h3{font-size:24px;margin-bottom:8px}.phone-card p{font-size:14px;color:#c9d7e7;margin:0}
+    section{padding:72px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 40px}
+    .section-title h2{font-size:36px;margin-bottom:10px}.section-title p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:white;border-radius:20px;padding:26px;box-shadow:0 8px 30px #0b23400d;border:1px solid #e7edf5}
+    .icon{font-size:34px;margin-bottom:13px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:15px}
+    .process{background:#07111f;color:white}.process .section-title p{color:#b8c6d8}
+    .process .card{background:#0d1c30;border-color:#21344d}
+    .process .card p{color:#aebed1}
+    .why{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .highlight{background:linear-gradient(145deg,#0b63f6,#0747b6);color:white;border-radius:25px;padding:35px}
+    .highlight h2{font-size:34px;margin-bottom:14px}.highlight p{color:#dbeafe}
+    .list{margin-top:24px;display:grid;gap:13px}.list div{display:flex;gap:10px;align-items:flex-start}
+    .check{background:#ffffff20;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;flex:none}
+    .contact{background:white;border-radius:25px;padding:32px;box-shadow:0 8px 30px #0b23400d;border:1px solid #e7edf5}
+    .contact-row{padding:15px 0;border-bottom:1px solid #e8edf3}.contact-row:last-child{border:0}
+    .contact-row small{display:block;color:var(--muted);margin-bottom:3px}
+    .contact-row a{color:var(--blue);font-weight:700}
+    .map{margin-top:18px;border-radius:16px;overflow:hidden;background:#eaf1fb;height:220px;display:grid;place-items:center;text-align:center;padding:20px}
+    .map a{background:#0b63f6;color:white;padding:12px 18px;border-radius:10px;font-weight:700}
+    .cta{background:linear-gradient(135deg,#0b63f6,#14b8d4);color:white;text-align:center;border-radius:28px;padding:48px 25px}
+    .cta h2{font-size:38px;margin-bottom:10px}.cta p{margin-bottom:22px;color:#e7f8ff}
+    .cta .btn{background:white;color:#0755c9}
+    footer{background:#050b14;color:#9eafc3;padding:25px 0;text-align:center;font-size:13px}
+    .floating{position:fixed;right:18px;bottom:18px;background:var(--green);color:white;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:10}
+    @media(max-width:800px){
+      .hero,.why{grid-template-columns:1fr}.grid{grid-template-columns:1fr}
+      .hero{padding:48px 0 62px}.phone-card{display:none}
+      nav{padding:16px 0}.nav-btn{font-size:12px;padding:9px 12px}
+      section{padding:55px 0}.section-title h2{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">INDO <span>PONSEL</span></div>
+      <a class="nav-btn" href="https://maps.app.goo.gl/FtdWBA4VmfCWS3ZU7?g_st=ac" target="_blank">📍 Lihat Lokasi</a>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="badge">🔧 SERVICE HP ANDROID & iPHONE BERGARANSI</div>
+        <h1>HP Rusak?<br><span>Serahkan ke Ahlinya.</span></h1>
+        <p>Solusi service HP Android & iPhone untuk berbagai kerusakan. Ditangani dengan teliti, transparan, dan mengutamakan kualitas perbaikan.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="https://wa.me/6281298947889?text=Halo%20Indo%20Ponsel%2C%20saya%20ingin%20konsultasi%20service%20HP." target="_blank" rel="noopener">💬 WhatsApp Kami</a>
+          <a class="btn btn-secondary" href="https://maps.app.goo.gl/FtdWBA4VmfCWS3ZU7?g_st=ac" target="_blank">📍 Datang ke Toko</a>
+        </div>
+      </div>
+      <div class="phone-card">
+        <div class="phone">📱</div>
+        <h3>Android & iPhone</h3>
+        <p>Perbaikan hardware dan software untuk membantu HP kembali berfungsi optimal.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>Layanan Service</h2>
+      <p>Berbagai kebutuhan perbaikan HP dalam satu tempat.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">💥</div><h3>LCD & Layar Pecah</h3><p>Penanganan layar retak, pecah, blank, bergaris, atau touchscreen bermasalah.</p></div>
+      <div class="card"><div class="icon">🔋</div><h3>Ganti Baterai</h3><p>Solusi untuk baterai cepat habis, drop, kembung, atau HP sulit menyala.</p></div>
+      <div class="card"><div class="icon">⚡</div><h3>Charging & Mati Total</h3><p>Diagnosa masalah konektor charger, tidak mengisi, hingga HP mati total.</p></div>
+      <div class="card"><div class="icon">💧</div><h3>Kerusakan Terkena Air</h3><p>Pemeriksaan dan penanganan perangkat yang terkena air atau cairan.</p></div>
+      <div class="card"><div class="icon">🛠️</div><h3>Hardware</h3><p>Perbaikan komponen dan masalah hardware sesuai hasil pengecekan teknisi.</p></div>
+      <div class="card"><div class="icon">💻</div><h3>Software</h3><p>Penanganan masalah software, sistem, bootloop, dan kendala perangkat lunak.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>Proses Service</h2>
+      <p>Simple, jelas, dan mudah.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">1️⃣</div><h3>Diagnosa</h3><p>HP diperiksa untuk menemukan sumber masalah.</p></div>
+      <div class="card"><div class="icon">2️⃣</div><h3>Konfirmasi</h3><p>Estimasi tindakan dan biaya dikomunikasikan sebelum pengerjaan.</p></div>
+      <div class="card"><div class="icon">3️⃣</div><h3>Pengerjaan</h3><p>Teknisi melakukan perbaikan sesuai hasil diagnosa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container why">
+    <div class="highlight">
+      <h2>Kenapa Service di Sini?</h2>
+      <p>Fokus pada proses perbaikan yang rapi dan komunikasi yang jelas kepada pelanggan.</p>
+      <div class="list">
+        <div><span class="check">✓</span><span>Spesialis Android & iPhone</span></div>
+        <div><span class="check">✓</span><span>Diagnosa sebelum perbaikan</span></div>
+        <div><span class="check">✓</span><span>Informasi biaya lebih transparan</span></div>
+        <div><span class="check">✓</span><span>Garansi service sesuai ketentuan toko</span></div>
+      </div>
+    </div>
+
+    <div class="contact" id="kontak">
+      <a class="btn btn-primary" style="display:block;text-align:center;margin-bottom:20px;background:#16a34a" href="https://wa.me/6281298947889?text=Halo%20Indo%20Ponsel%2C%20saya%20ingin%20konsultasi%20service%20HP." target="_blank" rel="noopener">💬 Chat WhatsApp: 0812-9894-7889</a>
+      <h2>Datang ke Toko</h2>
+      <div class="contact-row">
+        <small>Nama</small>
+        <strong>Service HP Android & iPhone Bergaransi (Indo Ponsel)</strong>
+      </div>
+      <div class="contact-row">
+        <small>Alamat</small>
+        <strong>Jl. Patriot No.95, Jakasampurna, Bekasi Barat, Kota Bekasi, Jawa Barat 17145</strong>
+      </div>
+      <div class="map">
+        <div>
+          <p style="margin-bottom:12px;color:#52657d">Buka Google Maps untuk melihat rute ke toko.</p>
+          <a href="https://maps.app.goo.gl/FtdWBA4VmfCWS3ZU7?g_st=ac" target="_blank">📍 Buka Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>HP Bermasalah? Jangan Tunggu Parah.</h2>
+      <p>Hubungi toko atau langsung datang untuk konsultasi dan pengecekan HP Anda.</p>
+      <a class="btn" href="https://maps.app.goo.gl/FtdWBA4VmfCWS3ZU7?g_st=ac" target="_blank">📍 Arah ke Toko</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Indo Ponsel — Service HP Android & iPhone Bekasi
+</footer>
+
+<a class="floating" href="https://maps.app.goo.gl/FtdWBA4VmfCWS3ZU7?g_st=ac" target="_blank">📍 Lokasi Toko</a>
+
+</body>
+</html>
